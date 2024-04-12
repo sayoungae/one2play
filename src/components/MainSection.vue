@@ -33,7 +33,35 @@
         </div>
     </div>
     <section id="room-preview-section">
-        
+        <div class="info-con">
+            <div class="inner-con">
+                <div class="img-box"><img src="" alt=""/></div>
+                <div class="txt-box">
+                    <div>
+                        <span>SPACE</span>
+                        <h3>Living & Kitchen</h3>
+                        <p>거실 & 주방,</p>
+                    </div>
+                    <div>
+                        <p>
+                            거실은 펜션에서 휴식과 모임을 위한 아늑한 공간을 제공합니다.<br/>
+                            이 곳에서 편안하게 쉬고, 함께 시간을<br/>
+                            보내며 즐거운 추억을 만들어 보세요.<br/>
+                            주방은 고객님들에게 편리한 요리 공간을 제공합니다.<br/>
+                            가족과 친구들과 함께 식사를 준비하고 즐거운<br/>
+                            식사와 추억을 남겨보세요.
+                        </p>
+                        <a href="#none">
+                            Living & Kitchen
+                            <div class="line-wrap">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </template>
 <script>
