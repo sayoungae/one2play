@@ -35,14 +35,14 @@
     <section id="room-preview-section">
         <div class="info-con">
             <div class="inner-con">
-                <div class="img-box"><img src="" alt=""/></div>
+                <div class="img-box"><img src="@/assets/image/room_preview_img1.jpg" alt=""/></div>
                 <div class="txt-box">
-                    <div>
+                    <div class="tit">
                         <span>SPACE</span>
                         <h3>Living & Kitchen</h3>
                         <p>거실 & 주방,</p>
                     </div>
-                    <div>
+                    <div class="txt">
                         <p>
                             거실은 펜션에서 휴식과 모임을 위한 아늑한 공간을 제공합니다.<br/>
                             이 곳에서 편안하게 쉬고, 함께 시간을<br/>
@@ -51,7 +51,7 @@
                             가족과 친구들과 함께 식사를 준비하고 즐거운<br/>
                             식사와 추억을 남겨보세요.
                         </p>
-                        <a href="#none">
+                        <a href="#none" class="link">
                             Living & Kitchen
                             <div class="line-wrap">
                                 <span class="line"></span>
@@ -59,6 +59,104 @@
                             </div>
                         </a>
                     </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="info-con">
+            <div class="inner-con">
+                <div class="txt-box">
+                    <div class="tit">
+                        <span>SPACE</span>
+                        <h3>Jungle Room</h3>
+                        <p>정글룸,</p>
+                    </div>
+                    <div class="txt">
+                        <p>
+                            소나무 원목으로 제작된 이층 놀이터와<br/>
+                            오두막,그린 플랜테리어 월, 각종 동물친구들<br/>
+                            동물러버 친구들 모두 모이세요<br/>
+                            Welcome to the One two Jungle !!!
+                        </p>
+                        <a href="#none" class="link">
+                            Jungle Room
+                            <div class="line-wrap">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="img-box"><img src="@/assets/image/room_preview_img2.jpg" alt=""/></div>
+            </div>
+        </div>
+        <div class="info-con">
+            <div class="inner-con">
+                <div class="img-box"><img src="@/assets/image/room_preview_img3.jpg" alt=""/></div>
+                <div class="txt-box">
+                    <div class="tit">
+                        <span>SPACE</span>
+                        <h3>Bedroom 2F</h3>
+                        <p>침실2층,</p>
+                    </div>
+                    <div class="txt">
+                        <p>
+                            2층의 침실은 아름다운 전망과 조용한 분위기를 제공합니다.<br/>
+                            이곳에서 자연의 아름다움을 감상하며 휴식을 취하고,<br/>
+                            편안한 밤을 보내보세요.
+                        </p>
+                        <a href="#none" class="link">
+                            Bedroom 2F
+                            <div class="line-wrap">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info-con">
+            <div class="inner-con">
+                <div class="txt-box">
+                    <div class="tit">
+                        <span>SPACE</span>
+                        <h3>Bedroom 1F</h3>
+                        <p>정글룸,</p>
+                    </div>
+                    <div class="txt">
+                        <p>
+                            소나무 원목으로 제작된 이층 놀이터와<br/>
+                            오두막,그린 플랜테리어 월, 각종 동물친구들<br/>
+                            동물러버 친구들 모두 모이세요<br/>
+                            Welcome to the One two Jungle !!!
+                        </p>
+                        <a href="#none" class="link">
+                            Jungle Room
+                            <div class="line-wrap">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="img-box"><img src="@/assets/image/room_preview_img4.jpg" alt=""/></div>
+            </div>
+        </div>
+    </section>
+    <section id="sub-visual-section">
+        <div class="bg">
+            <div class="inner-con">
+                <div class="tit-wrap">
+                    <h3>Want to Play</h3>
+                    <p>
+                        <span>
+                            아빠와 엄마가 직접 만든 집
+                        </span>
+                        <span>
+                            원투플레이로 초대합니다.
+                        </span>
+                    </p>
                 </div>
             </div>
         </div>
@@ -79,16 +177,14 @@ export default {
         SwiperSlide
 	},
     setup() {
-       
-        const onSwiper = (swiper) => {
-            console.log(swiper);
+        const onSwiper = () => {
+            //console.log(swiper);
             var mainPagination = document.querySelector('.swiper-pagination.swiper-pagination-fraction');
             document.querySelector('.swiper-pagination-current').style = "margin-right:10px;";
             document.querySelector('.swiper-pagination-total').style = "margin-left:10px;"
             for (var i = 0; i < mainPagination.childNodes.length; i++) {
                 var node = mainPagination.childNodes[i];
                 if (node.nodeName === "#text") {
-                    // "#text" 노드의 내용을 변
                     node.nodeValue = "―――――――――";
                 }
             }
